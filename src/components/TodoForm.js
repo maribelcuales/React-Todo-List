@@ -7,9 +7,15 @@ function TodoForm() {
     completed: false,
   });
 
+  function handleTaskInputChange(e) {
+    setTodo({ ...todo, task: e.target.value });
+  };
+
   return (
     <form>
-      <input />
+      <input 
+        onChange={handleTaskInputChange}
+      />
       <button /> 
     </form>
   );
