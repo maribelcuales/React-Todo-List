@@ -1,6 +1,11 @@
-import React from "react";  
+import React, { useState } from "react";  
 
 function TodoForm() {
+  const [todo, setTodo] = useState({
+    id: "",
+    task: "",
+    completed: false,
+  });
 
   return (
     <form>
