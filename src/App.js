@@ -3,6 +3,10 @@ import './App.css';
 
 function App() {
   const [todos, setTodos] = useState([]);  
+
+  function addTodo(todo) {
+    setTodos([todo, ...todos]);
+  }
   
   return (
     <div className="App">
