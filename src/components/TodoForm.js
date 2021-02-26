@@ -1,6 +1,6 @@
 import React, { useState } from "react";  
 
-function TodoForm() {
+function TodoForm({ addTodo }) {
   const [todo, setTodo] = useState({
     id: "",
     task: "",
