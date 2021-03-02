@@ -22,6 +22,7 @@ function TodoForm({ addTodo }) {
   }
 
   return (
+    // Define the form's onSubmit property to the new handleSubmit function  
     <form onSubmit={handleSubmit}>
       <input 
         name="task"
