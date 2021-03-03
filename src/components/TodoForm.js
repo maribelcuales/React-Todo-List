@@ -14,6 +14,7 @@ function TodoForm({ addTodo }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    // if statement only gets called if the todo.task is not empty  
     if (todo.task.trim()) {
       addTodo({ ...todo, id: uuid.v4() });
       // reset task input 
