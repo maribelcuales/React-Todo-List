@@ -17,6 +17,7 @@ function TodoForm({ addTodo }) {
     e.preventDefault();
     // if statement only gets called if the todo.task is not empty  
     if (todo.task.trim()) {
+      // update todo with an id property from uuid package
       addTodo({ ...todo, id: uuid.v4() });
       // reset task input 
       setTodo({ ...todo, task:"" }); 
