@@ -10,6 +10,8 @@ function TodoForm({ addTodo }) {
   });
 
   function handleTaskInputChange(e) {
+    // e.target.value contains new input from onChange
+    // event for input details 
     setTodo({ ...todo, task: e.target.value });
   };
 
