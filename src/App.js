@@ -4,7 +4,11 @@ import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 
 function App() {
-  const [todos, setTodos] = useState([]);  
+  const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+
+  }, [todos]);
 
   function addTodo(todo) {
     setTodos([todo, ...todos]);
