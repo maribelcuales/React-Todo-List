@@ -3,11 +3,13 @@ import './App.css';
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 
+const LOCAL_STORAGE_KEY = "react-todo-list-todos";
+
 function App() {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
   }, [todos]);
 
   function addTodo(todo) {
