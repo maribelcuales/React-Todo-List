@@ -9,6 +9,7 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
+    // get todos from browser local storage and then parse it
     const storageTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (storageTodos) {
       setTodos(storageTodos);
