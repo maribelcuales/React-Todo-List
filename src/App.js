@@ -25,6 +25,8 @@ function App() {
   };
 
   function toggleComplete(id) {
+    // call setTodos to update the todos 
+    // pass a new todos array by performing a map on the todos
     setTodos(
       todos.map(todo => {
         if (todo.id === id) {
