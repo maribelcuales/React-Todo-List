@@ -24,6 +24,7 @@ function App() {
     setTodos([todo, ...todos]);
   };
 
+  // toggle todo items to be completed 
   function toggleComplete(id) {
     // call setTodos to update the todos 
     // pass a new todos array by performing a map on the todos
