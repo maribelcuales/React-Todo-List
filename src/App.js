@@ -47,7 +47,7 @@ function App() {
       <header className="App-header">
         <p>React Todo</p>
         <TodoForm addTodo={addTodo} />
-        <TodoList todos={todos} />
+        <TodoList todos={todos} toggleComplete={toggleComplete} />
       </header>
     </div>
   );
