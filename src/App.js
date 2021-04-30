@@ -30,6 +30,7 @@ function App() {
     // pass a new todos array by performing a map on the todos
     setTodos(
       todos.map(todo => {
+        // we want to check the id of the todo matches the id passed in
         if (todo.id === id) {
           return {
             ...todo,
